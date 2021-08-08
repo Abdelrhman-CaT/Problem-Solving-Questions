@@ -31,7 +31,7 @@ int main() {
 	for (int i = 0; i < n - 1; i++) {
 		while (res[i] == res[i + 1]) {
 			res[i + 1] = res[redundant_index];
-			redundant_index += 1;
+			redundant_index = (redundant_index + 1) % n;
 		}
 	}
 
